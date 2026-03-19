@@ -54,6 +54,7 @@ LIMIT :limit OFFSET :offset;`,
         throw error;
     }
 }
+const helllo = "hello"
 
 // export const createClassService = async (req, reply) => {
 //     try {
