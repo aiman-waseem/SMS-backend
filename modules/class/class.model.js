@@ -1,7 +1,6 @@
 import { DataTypes } from "sequelize";
 import sequelize from "../../config/DBconnection.js";
-import ClassSubject from "./classSubject.model.js";
-import Subject from "../subjects/subjects.model.js";
+
 
 
 const Class = sequelize.define(
@@ -34,11 +33,7 @@ const Class = sequelize.define(
   }
   
 );
-// Class.belongsToMany(Subject, {
-//   through: ClassSubject,
-//   foreignKey: "classId",
-//   as: "subjects"
-// });
+
 
 
 export default Class;

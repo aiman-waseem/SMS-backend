@@ -1,3 +1,4 @@
+import { Op } from "sequelize";
 import apiResponse from "../../../config/apiResponse.js";
 import sequelize from "../../../config/DBconnection.js";
 import Subject from "../../subjects/subjects.model.js";
@@ -6,55 +7,76 @@ import ClassSubject from "../classSubject.model.js";
 
 export const getClassService = async (req, reply) => {
     try {
-        const {limit=10, offset=0, classId} = req.query;
+        const {limit=10, offset=0, classId, className} = req.query;
 
        let whereClause = "";
         if (classId) {
             whereClause = `WHERE c.id = :classId`;
         }
-        const response= await sequelize.query(
-            `SELECT 
-    c.id,
-    c.className,
-    COALESCE(JSON_ARRAYAGG(s.subjectName), JSON_ARRAY()) AS subjects,
-    COUNT(*) OVER() AS total_count
-FROM class c
-LEFT JOIN class_subjects cs ON c.id = cs.classId
-LEFT JOIN subjects s ON cs.subjectId = s.id
-${whereClause}
-GROUP BY c.id, c.className
+//         const response= await sequelize.query(
+//             `SELECT 
+//     c.id,
+//     c.className,
+//     COALESCE(JSON_ARRAYAGG(s.subjectName), JSON_ARRAY()) AS subjects,
+//     COUNT(*) OVER() AS total_count
+// FROM class c
+// LEFT JOIN class_subjects cs ON c.id = cs.classId
+// LEFT JOIN subjects s ON cs.subjectId = s.id
+// ${whereClause}
+// GROUP BY c.id, c.className
 
-LIMIT :limit OFFSET :offset;`,
-            {
-                replacements: {
-                    limit: Number(limit),
-                    offset: Number(offset),
-                    classId: classId
-                },
-             type: sequelize.QueryTypes.SELECT
+// LIMIT :limit OFFSET :offset;`,
+//             {
+//                 replacements: {
+//                     limit: Number(limit),
+//                     offset: Number(offset),
+//                     classId: classId
+//                 },
+//              type: sequelize.QueryTypes.SELECT
 
-            }
-        );
-        // const res2 = Class.findAll({
-        //     limit: Number(limit),
-        //     offset: Number(offset),
-        //     include: [
-        //       {
-        //         model: ClassSubject,
-        //         include: [{
-        //           model: Subject
-        //         }]
-        //       }
-        //     ]
-        //   });
+//             }
+//         );
 
-      
-        return response;
+    // if(limit && offset || offset == 0){ {}
+    const whereClauseObj = {
+      [Op.and]: [
+        classId ? { id: classId } : false,
+        // className ? { className } : {}
+
+        className ? { className: { [Op.like]: `%${className}%` } } : false
+
+      ].filter(Boolean)
+
+    };
+  
+
+    const {rows, count} = await Class.findAndCountAll({
+  limit: Number(limit),
+  offset: Number(offset),
+  // where: classId ? { id: classId } : {},
+  distinct: true, // ❗ important for correct count with include
+  where: whereClauseObj,
+  include: [
+    {
+      model: Subject,
+      as: "subjects", // ❗ same alias jo association me diya
+      through: {
+        attributes: [] // optional: ClassSubject hide karne ke liye
+      }
+    }
+  ]
+});
+     
+      return {
+        count,
+        data: classId ? rows[0] : rows
+      };
+      // aik treeqa ye b hai k listing k lye find and count all or get by id k lye find one krwa lo if classId exists then exexute find one query otherwise find and count all query
     } catch (error) {
         throw error;
     }
 }
-const helllo = "hello"
+
 
 // export const createClassService = async (req, reply) => {
 //     try {

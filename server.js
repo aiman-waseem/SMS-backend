@@ -42,6 +42,8 @@ const host = process.env.HOST || '0.0.0.0';
 
 
 // processCronJobs()
+associations();
+
 const startServer = async () => {
   try {
     console.log("NODE_ENV:", process.env.NODE_ENV);
@@ -50,7 +52,6 @@ const startServer = async () => {
 
     // await sequelize.authenticate();
     console.log("✅ Database connection established");
-
 
 
 
