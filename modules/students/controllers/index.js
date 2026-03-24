@@ -55,11 +55,12 @@ export const createStudents = async (req, reply) => {
 export const getStudents = async (req, reply) => {
     
     try {
-        const {limit=10,offset=0,name,classId} = req.query;
+        const {limit=10,offset=0,name,classId, studentId} = req.query;
 
         const whereClause = {
             [Op.and]:[
                 name ? { std_name: { [Op.like]: `%${name}%` } } : false,
+                studentId ? { id: studentId } : false,
                 // classId ? { '$enrollments.classId$': classId } : false
             ].filter(Boolean)
         };
@@ -105,13 +106,14 @@ export const getStudents = async (req, reply) => {
     }
   ]
 });
+
         return reply.send(
             apiResponse(
               "Success",
               true,
               200,
               "Students retrieved successfully!",
-              { data:rows, count }
+              { data: studentId ? rows[0] : rows, count }
             )
           );
     } catch (error) {
