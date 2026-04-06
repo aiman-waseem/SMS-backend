@@ -1,4 +1,5 @@
-
+const insecureRoutes = [
+  "/api/v1/auth/login"]
 
 export function preValidRequest(fastify) {
   fastify.addHook("preHandler", async (request, reply) => {

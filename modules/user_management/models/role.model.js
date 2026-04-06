@@ -16,6 +16,7 @@ export const Role = sequelize.define(
     name: {
       type: DataTypes.STRING(45),
       unique: true,
+      
     },
     roleType: {
       type: DataTypes.STRING(45),

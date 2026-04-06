@@ -47,3 +47,13 @@ let decoded;
     req.token = token;
 
 }
+
+export const authorize = async (req, res, method) => {
+    try {
+  let permissions = await getPermissionByRoleId(userObj?.roleId, false,userObj?.seller,req?.query?.sellerType, requestedUrl, method);
+
+        
+    } catch (error) {
+        
+    }
+}
