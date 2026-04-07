@@ -1,0 +1,8 @@
+2026-03-08 16:13:46 info: User login attempt { email: 'admin123@gmail.com' }
+2026-03-08 16:58:34 info: User login attempt { email: 'admin123@gmail.com' }
+2026-03-08 21:50:36 error: uncaughtException: classRoutes is not defined
+ReferenceError: classRoutes is not defined
+    at allRoutes (file:///C:/Users/User/Documents/SMS-back/route.js:8:20)
+    at Plugin.exec (C:\Users\User\Documents\SMS-back\node_modules\avvio\lib\plugin.js:125:28)
+    at Boot._loadPlugin (C:\Users\User\Documents\SMS-back\node_modules\avvio\boot.js:432:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)

@@ -1,0 +1,75 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 365
+    },
+    "auditLog": "logs\\.7cb76b2b642d4721ba2a424b1074b1e7d71e5842-audit.json",
+    "files": [
+        {
+            "date": 1771859585494,
+            "name": "logs\\AUDIT_LOGGER.2026-02-23.log",
+            "hash": "974ee0e27587b197ffd9fd04a84c8dd2f921fcf8dac8f3c9478bfc7d09d1d70f"
+        },
+        {
+            "date": 1771902214584,
+            "name": "logs\\AUDIT_LOGGER.2026-02-24.log",
+            "hash": "5d12721c8f34a3cd80a716bfaaba6a3aa8e95f8eb8c75bd1a59baf52f7fbcc7a"
+        },
+        {
+            "date": 1771983026516,
+            "name": "logs\\AUDIT_LOGGER.2026-02-25.log",
+            "hash": "b326363575e4cd2cec9c392e99fad02f60fe4fe79dd8ef183ace35ca4b37c2da"
+        },
+        {
+            "date": 1772275496973,
+            "name": "logs\\AUDIT_LOGGER.2026-02-28.log",
+            "hash": "1aa4105fb7b52dd386c737917bf886109926542a9981c6f54f86e2e91ed44a2b"
+        },
+        {
+            "date": 1772305456289,
+            "name": "logs\\AUDIT_LOGGER.2026-03-01.log",
+            "hash": "e686725dc97bcb277d570d84530f5e736f59d0510b3d303f2669ac3fff6de772"
+        },
+        {
+            "date": 1772968380771,
+            "name": "logs\\AUDIT_LOGGER.2026-03-08.log",
+            "hash": "8440dc96f39ca76984a789a6767f1e6e16939e763c193704361340eccc34215b"
+        },
+        {
+            "date": 1773076249136,
+            "name": "logs\\AUDIT_LOGGER.2026-03-09.log",
+            "hash": "0c2f0d56153095f503cdb42c2c4a0d7e0c445bb06bd1a5027f34ce805946d0f0"
+        },
+        {
+            "date": 1773404184869,
+            "name": "logs\\AUDIT_LOGGER.2026-03-13.log",
+            "hash": "54b578ae44e5c38d0d01cd8e30681d7f9c68fc9b13d9d9666b971cec165d8be4"
+        },
+        {
+            "date": 1773490355542,
+            "name": "logs\\AUDIT_LOGGER.2026-03-14.log",
+            "hash": "1a3dff7c3d226a8f85a22023be6567584ddf719fc42fc73541a7c269f58cde35"
+        },
+        {
+            "date": 1773628411455,
+            "name": "logs\\AUDIT_LOGGER.2026-03-16.log",
+            "hash": "9d7f332dce884170965d786214d1e15d105b01e650e299ac581aae8549f045d2"
+        },
+        {
+            "date": 1773800176695,
+            "name": "logs\\AUDIT_LOGGER.2026-03-18.log",
+            "hash": "2ea8715d04bdeab615bdad0511ea9e4dba444661d89ccd4e2af055d733eb8a07"
+        },
+        {
+            "date": 1773921818046,
+            "name": "logs\\AUDIT_LOGGER.2026-03-19.log",
+            "hash": "63a2317f03fc4521bc1072463fbedf0fd96dfc9f9dcb070a05481df2d122d2e4"
+        },
+        {
+            "date": 1773947612993,
+            "name": "logs\\AUDIT_LOGGER.2026-03-20.log",
+            "hash": "ed0c63b98442d83c531fa6861e4e5ff8476c787f9c25aba82ea8d20a45eeca6a"
+        }
+    ],
+    "hashType": "sha256"
+}

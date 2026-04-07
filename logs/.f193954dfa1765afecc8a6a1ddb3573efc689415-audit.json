@@ -1,0 +1,75 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 365
+    },
+    "auditLog": "logs\\.f193954dfa1765afecc8a6a1ddb3573efc689415-audit.json",
+    "files": [
+        {
+            "date": 1771859585498,
+            "name": "logs\\WEB_LOGGER.2026-02-23.log",
+            "hash": "d8a28b725c97a4bc0af366d534a852e110d59c2d4612982db880d0f659975c03"
+        },
+        {
+            "date": 1771902214592,
+            "name": "logs\\WEB_LOGGER.2026-02-24.log",
+            "hash": "2b772636c5dd6c7df97ef9f4d86188cf8429f8275fb24643eacd0829b82d0648"
+        },
+        {
+            "date": 1771983026520,
+            "name": "logs\\WEB_LOGGER.2026-02-25.log",
+            "hash": "79a2b4108cedc3eac9363a0730106c6df07e507482e6796454cde830f7ec506e"
+        },
+        {
+            "date": 1772275496977,
+            "name": "logs\\WEB_LOGGER.2026-02-28.log",
+            "hash": "036d74bc69caa37e05576c8b2780a6c5f169cd2c85fe76ed3062a4c6662f7f50"
+        },
+        {
+            "date": 1772305456292,
+            "name": "logs\\WEB_LOGGER.2026-03-01.log",
+            "hash": "140f6b931a39ef60192304183456ea84753579ff0352062a74351eba88d6667e"
+        },
+        {
+            "date": 1772968380774,
+            "name": "logs\\WEB_LOGGER.2026-03-08.log",
+            "hash": "7958900ac3537d33358a154bebb30298bc734060ed7992664a28606d80917f9a"
+        },
+        {
+            "date": 1773076249140,
+            "name": "logs\\WEB_LOGGER.2026-03-09.log",
+            "hash": "c1cf42a60311c7515cc89f3ba4875fad37475457029e21fe5f9787251714c892"
+        },
+        {
+            "date": 1773404184874,
+            "name": "logs\\WEB_LOGGER.2026-03-13.log",
+            "hash": "4569062a92fe1ed29edfa97f0097bb902562eb2f5cf86fb6de617f7b11e26143"
+        },
+        {
+            "date": 1773490355548,
+            "name": "logs\\WEB_LOGGER.2026-03-14.log",
+            "hash": "5011afaa7b862234a8d068771fc569b8461baf6643a9f9799cff1fcfea5da78e"
+        },
+        {
+            "date": 1773628411461,
+            "name": "logs\\WEB_LOGGER.2026-03-16.log",
+            "hash": "c015d517dc29ecfa833b882eed219b2766fb1ff2e3ff464af0f9881ff9fc5412"
+        },
+        {
+            "date": 1773800176700,
+            "name": "logs\\WEB_LOGGER.2026-03-18.log",
+            "hash": "7690e0b4e18184359b32a05f5bde3559866c5780b47a575a29aaef9315af57e2"
+        },
+        {
+            "date": 1773921818053,
+            "name": "logs\\WEB_LOGGER.2026-03-19.log",
+            "hash": "77f6c6bef7cacaac683d869f21dbe94d4227a21e5f50207217e8fa32bf698bea"
+        },
+        {
+            "date": 1773947612999,
+            "name": "logs\\WEB_LOGGER.2026-03-20.log",
+            "hash": "935c15d5b7f12aef5b755dd0443b0f34c7a34d3d9d12d227866dd14469ab7573"
+        }
+    ],
+    "hashType": "sha256"
+}

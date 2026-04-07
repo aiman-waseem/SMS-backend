@@ -1,0 +1,49 @@
+2026-02-24 08:14:23 error: uncaughtException: chalk is not defined
+ReferenceError: chalk is not defined
+    at file:///C:/Users/User/Documents/SMS-back/config/DBconnection.js:20:15
+    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:316:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2026-02-24 08:14:26 error: uncaughtException: chalk is not defined
+ReferenceError: chalk is not defined
+    at file:///C:/Users/User/Documents/SMS-back/config/DBconnection.js:20:15
+    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:316:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2026-02-24 08:15:00 error: uncaughtException: chalk is not defined
+ReferenceError: chalk is not defined
+    at file:///C:/Users/User/Documents/SMS-back/config/DBconnection.js:20:15
+    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:316:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2026-02-24 17:46:41 error: uncaughtException: chalk is not defined
+ReferenceError: chalk is not defined
+    at file:///C:/Users/User/Documents/SMS-back/config/DBconnection.js:20:15
+    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:316:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2026-02-24 17:49:01 error: uncaughtException: chalk is not defined
+ReferenceError: chalk is not defined
+    at file:///C:/Users/User/Documents/SMS-back/config/DBconnection.js:20:15
+    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:316:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2026-02-24 17:49:14 error: uncaughtException: chalk is not defined
+ReferenceError: chalk is not defined
+    at file:///C:/Users/User/Documents/SMS-back/config/DBconnection.js:20:15
+    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:316:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2026-02-24 22:08:34 error: uncaughtException: chalk is not defined
+ReferenceError: chalk is not defined
+    at file:///C:/Users/User/Documents/SMS-back/config/DBconnection.js:20:15
+    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:316:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2026-02-24 22:09:16 error: uncaughtException: chalk is not defined
+ReferenceError: chalk is not defined
+    at file:///C:/Users/User/Documents/SMS-back/config/DBconnection.js:20:15
+    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:316:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2026-02-24 22:50:08 info: User login attempt { email: 'darakhshan.sarwar+4@evantagesoft.com' }

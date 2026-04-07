@@ -1,0 +1,75 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 365
+    },
+    "auditLog": "logs\\.77dcd2b59e7b7c05eeed610cba8fd9a3a089e449-audit.json",
+    "files": [
+        {
+            "date": 1771859585486,
+            "name": "logs\\PORTAL_LOGGER.2026-02-23.log",
+            "hash": "21390c71972db614f984187d157a2c757e31ebc9db9b0d481784f518ecc7fcfd"
+        },
+        {
+            "date": 1771902214565,
+            "name": "logs\\PORTAL_LOGGER.2026-02-24.log",
+            "hash": "610ce6200c72a6312aa2898abb4b3c3c9b383c1f933b6e89f0a3d205369702ed"
+        },
+        {
+            "date": 1771983026501,
+            "name": "logs\\PORTAL_LOGGER.2026-02-25.log",
+            "hash": "ca9fdfb1214bb38df95c66193450d12993e957440a780dbe28e6102d4d0c376c"
+        },
+        {
+            "date": 1772275496959,
+            "name": "logs\\PORTAL_LOGGER.2026-02-28.log",
+            "hash": "337e2b13305b9cd3879387c5897d9bc1d0057411c7ae6c80e59afc2f120ab507"
+        },
+        {
+            "date": 1772305456281,
+            "name": "logs\\PORTAL_LOGGER.2026-03-01.log",
+            "hash": "aeeba4c8c15da422a86a8dd1532b50e132e588ee3db13a2763cbf88ae0684dfa"
+        },
+        {
+            "date": 1772968380758,
+            "name": "logs\\PORTAL_LOGGER.2026-03-08.log",
+            "hash": "0f76a3fcc0a686985b3b0e904769bc4f8ab9b0b7d29e5bbba735f41c5d56570a"
+        },
+        {
+            "date": 1773076249122,
+            "name": "logs\\PORTAL_LOGGER.2026-03-09.log",
+            "hash": "ea5cb794dec5e8a5de015bd7d232b07e4318f096970f562557efcede8454cb76"
+        },
+        {
+            "date": 1773404184852,
+            "name": "logs\\PORTAL_LOGGER.2026-03-13.log",
+            "hash": "e636c105944e24866e8a21e14d834747059064369f0e11152b89af16ecabb4f2"
+        },
+        {
+            "date": 1773490355491,
+            "name": "logs\\PORTAL_LOGGER.2026-03-14.log",
+            "hash": "896b390de63a004c5b24c05eb3fd5b35ab1a801ab261bc165bde621c0253f24f"
+        },
+        {
+            "date": 1773628411428,
+            "name": "logs\\PORTAL_LOGGER.2026-03-16.log",
+            "hash": "c20bb5ecd2ec8f1e74f6606eb0c1aa66d65cee58f3921e5115178285324358a2"
+        },
+        {
+            "date": 1773800176681,
+            "name": "logs\\PORTAL_LOGGER.2026-03-18.log",
+            "hash": "4b6d4a021a553b79ad442c91fb37015bfb75b9cc23a799d64939cf01ae2252ba"
+        },
+        {
+            "date": 1773921818022,
+            "name": "logs\\PORTAL_LOGGER.2026-03-19.log",
+            "hash": "61a926a15cf354572d34c3ec676743c29ca76152dfc9c2fcb4c3d32b7e1b9f7a"
+        },
+        {
+            "date": 1773947612970,
+            "name": "logs\\PORTAL_LOGGER.2026-03-20.log",
+            "hash": "23bdfb04a1796e9b99005fd29aa500dca99d26f91078f408ab067e3e9e1f393f"
+        }
+    ],
+    "hashType": "sha256"
+}
