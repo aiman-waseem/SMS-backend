@@ -1,8 +1,9 @@
 import { DataTypes } from "sequelize";
-import sequelize from "../../../config/DBcontext.js";
-import { Permission } from "./permission.model.js";
+
+
 import { SystemPermissions } from "./systemPermissions.model.js";
-import { SellerProfile } from "../../merchant_management/models/merchant.model.js";
+
+import sequelize from "../../../config/DBconnection.js";
 
 
 

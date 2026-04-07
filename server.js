@@ -14,6 +14,7 @@ const fastify = Fastify({
 //Fasifty Multer
 import fastifyMultipart from "@fastify/multipart";
 import { allRoutes } from "./route.js";
+import { preValidRequest } from "./middleware/preValidate.js";
 fastify.register(fastifyMultipart, {
   limits: {
     fileSize: 10 * 1024 * 1024, // optional: 10MB limit
@@ -22,7 +23,7 @@ fastify.register(fastifyMultipart, {
 //PerHandler
 // import { preValidRequest } from "./middleware/prevalidate.js";
 
-// preValidRequest(fastify);
+preValidRequest(fastify);
 
 
 process.on("unhandledRejection", (reason) => {

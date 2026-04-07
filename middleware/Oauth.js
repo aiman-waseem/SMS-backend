@@ -13,6 +13,7 @@
 //   }
 // };
 import jwt from "jsonwebtoken";
+import { getPermissionByRoleId } from "../modules/auth/services/permissions.service.js";
 export const generateAccessToken = (user) => {
     console.log("Inside token obj", user)
     try{
@@ -50,6 +51,10 @@ let decoded;
 
 export const authorize = async (req, res, method) => {
     try {
+        let userObj = req.user;
+  
+  console.log("userObj", userObj);
+  return
   let permissions = await getPermissionByRoleId(userObj?.roleId, false,userObj?.seller,req?.query?.sellerType, requestedUrl, method);
 
         

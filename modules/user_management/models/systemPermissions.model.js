@@ -1,5 +1,7 @@
 import { DataTypes } from "sequelize";
-import sequelize from "../../../config/DBcontext.js";
+import sequelize from "../../../config/DBconnection.js";
+
+
 
 export const SystemPermissions = sequelize.define(
     "SystemPermissions",

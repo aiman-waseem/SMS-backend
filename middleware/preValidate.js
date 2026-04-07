@@ -1,3 +1,5 @@
+import { authorize } from "./Oauth.js";
+
 const insecureRoutes = [
   "/api/v1/auth/login"]
 
@@ -19,6 +21,6 @@ export function preValidRequest(fastify) {
     //   await ensureDBConnection();
       await authenticate(request, reply, authToken);
       if (reply.sent) return;
-    //   await authorize(request, reply, method);
+      await authorize(request, reply, method);
   })
 }

@@ -1,8 +1,12 @@
-export const getPermissionByRoleId = async (
+import { SystemRolePermissions } from "../../user_management/models/rolePermission.model.js";
+import { SystemPermissions } from "../../user_management/models/systemPermissions.model.js";
+
+export const 
+getPermissionByRoleId = async (
   roleId,
   isRoot = false,
-  findSeller,
-  sellerType,
+  // findSeller,
+  // sellerType,
   requestedUrl = "",
   method = ""
 ) => {
@@ -25,16 +29,16 @@ export const getPermissionByRoleId = async (
   // if (isRoot) {
   //   permissionWhere.isRoot = isRoot;
   // }
-  console.log("findSeller",findSeller?.sellerType)
- let sellerPermType = 'b2b';
-if (findSeller?.sellerType === 'both') {
-  sellerPermType = sellerType?sellerType:'b2b';
-} else if (findSeller?.sellerType === 'b2c') {
-  sellerPermType = 'b2c';
-}
+//   console.log("findSeller",findSeller?.sellerType)
+//  let sellerPermType = 'b2b';
+// if (findSeller?.sellerType === 'both') {
+//   sellerPermType = sellerType?sellerType:'b2b';
+// } else if (findSeller?.sellerType === 'b2c') {
+//   sellerPermType = 'b2c';
+// }
 
-  const permFilters = { sellerPermType: sellerPermType };
-
+  // const permFilters = { sellerPermType: sellerPermType };
+const permFilters = {};
   // Dynamically add filters only if they exist
   if (requestedUrl) permFilters.action = requestedUrl;
   if (method) permFilters.method = method;
@@ -54,16 +58,17 @@ const result = await SystemRolePermissions.findAll({
       attributes: [
         "id",
         "name",
-        "parentElement",
+        // "parentElement",
         "label",
         "menuName",
         "method",
         "action",
         "isRender",
-        "icon",
+        // "icon",
         "isRoot",
-        "displayMenuPos",
+        // "displayMenuPos",
         "displayPos",
+
       ],
     },
   ],
